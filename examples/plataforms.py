@@ -15,7 +15,7 @@ total = len(file.getRows())
 
 #monsta um objeto com o valor zero
 rows = {}
-rows['total'] = 0
+rows['anothers'] = 0
 rows['mac'] = 0
 
 #busca os valores da coluna "Mac" e percorre as linhas
@@ -24,7 +24,7 @@ for r in data:
   if r == 'True': rows['mac'] = rows['mac'] + 1
 
 # restante
-rows['total'] = total-rows['mac']
+rows['anothers'] = total-rows['mac']
 
 # percorre as linhas e imprime a resposta
 for k, v in rows.items():

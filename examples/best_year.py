@@ -44,10 +44,10 @@ for k, r in rows.items():
 # print(years)
 
 if(len(years) > 1):
-    print("Resposta: Os anos com maiores números de novos jogos foram:", end= ' ')
+    print("Resposta: Com um total de " + str(bigger) + " jogos lançados, anos com maiores números de lançamentos foram:", end= ' ')
     print(' - '.join(years))
 else:
-    print("Resposta: O ano com o maior número de novos jogos foram:", end= ' ')
+    print("Resposta: Com um total de " + str(bigger) + " jogos lançados, o ano com o maior número de lançamentos foi:", end= ' ')
     print(' - '.join(years))
 
 graphic = Graphic()
