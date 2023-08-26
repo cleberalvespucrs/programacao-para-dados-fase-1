@@ -4,8 +4,8 @@ sys.path.append('../')
 from inner_project.load_file import Csv
 from inner_project.graphic import Graphic
 
-file = Csv('steam_games.csv')
-# file = Csv('example_20_rows.csv')
+# file = Csv('steam_games.csv')
+file = Csv('example_20_rows.csv')
 
 rows = {}
 rows['paid'] = 0
