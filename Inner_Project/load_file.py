@@ -45,6 +45,12 @@ class Csv:
     """
     Method: _loadFile
     Description: método que faz a leitura do arquivo e retorna as linhas extraídas
+
+    Examples
+    --------
+    >>> file = Csv('../examples/example_20_rows.csv')
+    >>> len(file.getRows()) > 0
+    True
     """
 
     with open(filename) as csv_file:

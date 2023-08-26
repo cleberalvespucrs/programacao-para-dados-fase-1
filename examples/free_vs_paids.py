@@ -23,8 +23,11 @@ for r in data:
   else: rows['free'] = rows['free'] + 1
 
 # percorre as linhas e imprime a resposta
+print('Resposta:')
 for k, v in rows.items():
   print(k, ' => %.0f' % int( (v/len(data))*100 ) + '%')
+
+print("De um total de " + str(len(data)) + " jogos, encontramos um total de " + str(rows['free']) + ' jogos gratuítos')
 
 # monta os objetos de label e value para utilizar no gráfico
 labels = []

@@ -29,9 +29,6 @@ for r in data:
 #ordeno os itens pelo indíce, para deixar o mapa em ordem de ano
 rows = dict(sorted(rows.items()))
 
-print("Linhas lidas:")
-print(rows)
-
 #verifica qual é o maior valor entre os anos
 bigger = 0
 for k, v in rows.items():
@@ -47,10 +44,10 @@ for k, r in rows.items():
 # print(years)
 
 if(len(years) > 1):
-    print("Os anos com maiores números de novos jogos foram:")
+    print("Resposta: Os anos com maiores números de novos jogos foram:", end= ' ')
     print(' - '.join(years))
 else:
-    print("O ano com o maior número de novos jogos foram:")
+    print("Resposta: O ano com o maior número de novos jogos foram:", end= ' ')
     print(' - '.join(years))
 
 graphic = Graphic()

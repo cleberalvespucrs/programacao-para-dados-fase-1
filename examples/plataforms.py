@@ -11,7 +11,7 @@ print("Qual o percentual de jogos disponíveis para a plataforma IOS?")
 file = Csv('example_20_rows.csv')
 
 # total de jogos
-total = len(file.getRows())-1
+total = len(file.getRows())
 
 #monsta um objeto com o valor zero
 rows = {}
@@ -29,6 +29,8 @@ rows['total'] = total-rows['mac']
 # percorre as linhas e imprime a resposta
 for k, v in rows.items():
   print(k, ' => %.1f' % float( (v/total)*100 ) + '%')
+
+print("De um total de " + str(total) + " jogos, encontramos " + str(rows['mac']) + ' jogos compatíveis com as plataformas IOS')
 
 # monta os objetos de label e value para utilizar no gráfico
 labels = []
