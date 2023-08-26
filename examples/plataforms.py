@@ -37,9 +37,6 @@ for k, v in rows.items():
   labels.append(k)
   values.append(v)
 
-# print(labels)
-# print(values)
-
 # renderiza o gráfico do tipo pie
 graphic = Graphic(labels, values)
 graphic.setTitle('Qual o percentual de jogos disponíveis para a plataforma IOS?')
